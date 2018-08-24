@@ -1,0 +1,7 @@
+# Package requirements
+Django
+djangorestframework
+djangorestframework-jsonapi
+markdown
+django-crispy-forms
+django-filter

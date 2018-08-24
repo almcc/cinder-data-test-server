@@ -1,0 +1,19 @@
+# Developer requirements
+flake8
+flake8-isort
+flake8-quotes
+flake8-string-format
+flake8-docstrings
+pylint
+bumpversion
+
+pip-tools
+invoke
+
+# Atom IDE requirements
+python-language-server[all]
+isort
+
+# Helper tools (personal preference)
+ipython
+jupyter
