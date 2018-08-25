@@ -8,7 +8,7 @@ class ManufacturerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Manufacturer
-        fields = ('id', 'name', 'cars')
+        fields = ('id', 'name', 'created_at', 'updated_at', 'cars')
 
 
 class CarSerializer(serializers.ModelSerializer):
@@ -17,4 +17,4 @@ class CarSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Car
-        fields = ('id', 'name', 'manufacturer')
+        fields = ('id', 'name', 'created_at', 'updated_at', 'manufacturer')

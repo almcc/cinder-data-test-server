@@ -11,7 +11,7 @@ class ManufacturerViewSet(viewsets.ModelViewSet):
     queryset = Manufacturer.objects.all()
     serializer_class = ManufacturerSerializer
     search_fields = ('name',)
-    ordering_fields = ('name',)
+    ordering_fields = ('name', 'created_at', 'updated_at')
     ordering = ('name',)
 
 
@@ -22,5 +22,5 @@ class CarViewSet(viewsets.ModelViewSet):
     serializer_class = CarSerializer
     filter_fields = ('manufacturer',)
     search_fields = ('name',)
-    ordering_fields = ('name', 'manufacturer__name')
+    ordering_fields = ('name', 'created_at', 'updated_at', 'manufacturer__name')
     ordering = ('name',)
