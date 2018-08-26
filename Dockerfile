@@ -6,4 +6,4 @@ WORKDIR /code/
 RUN pip install -r requirements.txt
 RUN python manage.py migrate
 RUN python manage.py import_cars dataset.csv
-CMD python manage.py runserver 0.0.0.0:8000
+CMD gunicorn --workers=9 -b 0.0.0.0:8000 core.wsgi

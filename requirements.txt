@@ -9,6 +9,7 @@ django-filter==2.0.0
 django==2.1
 djangorestframework-jsonapi==2.5.0
 djangorestframework==3.8.2
+gunicorn==19.9.0
 inflection==0.3.1         # via djangorestframework-jsonapi
 markdown==2.6.11
 pytz==2018.5              # via django

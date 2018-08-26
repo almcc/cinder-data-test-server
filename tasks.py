@@ -36,7 +36,7 @@ def update_requirements(ctx):
 
 
 @task(update_requirements, sync_venv)
-def changed_requirement(ctx):
+def changed_requirements(ctx):
     """Update the requirements.txt file and sync the environment."""
     pass
 

@@ -5,3 +5,4 @@ djangorestframework-jsonapi
 markdown
 django-crispy-forms
 django-filter
+gunicorn
