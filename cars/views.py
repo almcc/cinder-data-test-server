@@ -20,7 +20,7 @@ class CarViewSet(viewsets.ModelViewSet):
 
     queryset = Car.objects.all()
     serializer_class = CarSerializer
-    filter_fields = ('manufacturer',)
-    search_fields = ('name',)
-    ordering_fields = ('name', 'created_at', 'updated_at', 'manufacturer__name')
+    filter_fields = ('manufacturer', 'year')
+    search_fields = ('name', 'year')
+    ordering_fields = ('name', 'year', 'created_at', 'updated_at', 'manufacturer__name')
     ordering = ('name',)
