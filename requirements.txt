@@ -14,3 +14,4 @@ inflection==0.3.1         # via djangorestframework-jsonapi
 markdown==2.6.11
 pytz==2018.5              # via django
 six==1.11.0               # via djangorestframework-jsonapi
+whitenoise==4.0
